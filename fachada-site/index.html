@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beauty & Wellness in Seven Mills, Dublin | Jully Ronqui</title>
+<meta name="description" content="Beauty and wellness treatments in a home studio in Seven Mills, Dublin 22, or in the comfort of your own home. 15 years' experience. Book on WhatsApp.">
+<meta property="og:title" content="Jully Ronqui Beauty & Wellness — Seven Mills, Dublin">
+<meta property="og:description" content="Beauty and wellness treatments with a personalised touch. Home studio or mobile appointments available.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%238D5A48'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='24' fill='%23FBF6F1' text-anchor='middle'%3EJR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --creme:#FBF6F1;
+    --bege:#F2E6DD;
+    --rose-suave:#E8BDB0;
+    --rose-queimado:#C27864;
+    --terracota:#8D5A48;
+    --dourado:#D4AF7A;
+    --marrom:#4A2E23;
+    --whatsapp:#25D366;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Montserrat',sans-serif;
+    font-weight:400;
+    color:var(--marrom);
+    background:var(--creme);
+    line-height:1.65;
+    font-size:16px;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.brand{
+    font-family:'Cinzel',serif;
+    font-weight:600;
+    line-height:1.15;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  section{padding:4.5rem 1.5rem;}
+  .wrap{max-width:920px;margin:0 auto;}
+  .eyebrow{
+    font-family:'Montserrat',sans-serif;
+    font-size:.75rem;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--terracota);
+    font-weight:600;
+    margin-bottom:.8rem;
+    display:block;
+  }
+  h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:1.8rem;}
+
+  /* topo */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(251,246,241,.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid rgba(74,46,35,.08);
+    padding:.9rem 1.5rem;
+  }
+  header .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1080px;}
+  .brand{display:flex;align-items:center;gap:.6rem;font-size:1.05rem;letter-spacing:.04em;color:var(--marrom);}
+  .brand img{width:38px;height:38px;border-radius:50%;object-fit:cover;}
+  .brand small{
+    display:block;font-family:'Montserrat',sans-serif;font-weight:500;
+    font-size:.55rem;letter-spacing:.22em;color:var(--terracota);
+    text-transform:uppercase;margin-top:.15rem;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:.5rem;
+    padding:.75rem 1.4rem;border-radius:999px;
+    font-family:'Montserrat',sans-serif;font-weight:600;font-size:.85rem;
+    white-space:nowrap;min-height:44px;
+  }
+  .btn-primary{background:var(--terracota);color:var(--creme);}
+  .btn-primary:hover{background:var(--marrom);}
+  .btn-ghost{
+    border:1px solid rgba(74,46,35,.25);color:var(--marrom);
+    background:transparent;font-size:.8rem;padding:.65rem 1.1rem;
+  }
+  header .btn{font-size:.78rem;padding:.65rem 1.05rem;}
+
+  /* hero */
+  .hero{
+    position:relative;
+    padding:5rem 1.5rem 4rem;
+    background:var(--creme);
+    overflow:hidden;
+  }
+  .hero .wrap{position:relative;z-index:2;max-width:640px;}
+  .sprig{
+    position:absolute;right:-40px;top:-30px;width:340px;height:340px;
+    opacity:.55;z-index:1;pointer-events:none;
+  }
+  .selo-confianca{
+    font-family:'Montserrat',sans-serif;
+    font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--terracota);font-weight:600;margin-bottom:1rem;
+  }
+  .hero h1{font-size:clamp(2.1rem,5.4vw,3.4rem);margin-bottom:1.1rem;color:var(--marrom);}
+  .hero p.sub{font-size:1.05rem;max-width:32ch;margin-bottom:2rem;color:var(--marrom);opacity:.85;}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:2.2rem;}
+  .hero-ctas .btn-primary{font-size:.95rem;padding:.9rem 1.6rem;}
+  .badges{display:flex;flex-wrap:wrap;gap:2.4rem;}
+  .badge{font-size:.82rem;font-weight:500;}
+  .badge b{display:block;font-family:'Cinzel',serif;font-size:1.15rem;color:var(--terracota);font-weight:600;margin-bottom:.4rem;}
+
+  @media (prefers-reduced-motion:no-preference){
+    .hero .wrap{animation:subir .7s ease both;}
+    @keyframes subir{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+  }
+
+  /* faixa de prova */
+  .faixa{
+    background:var(--bege);
+    padding:1.4rem 1.5rem;
+    text-align:center;
+  }
+  .faixa .wrap{
+    display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 2rem;
+    font-size:.85rem;font-weight:600;letter-spacing:.02em;color:var(--marrom);
+  }
+  .faixa .wrap span{white-space:nowrap;}
+  .faixa .dot{color:var(--terracota);}
+
+  /* serviços */
+  .servicos{background:var(--creme);}
+  .grupo{margin-bottom:2.6rem;}
+  .grupo:last-child{margin-bottom:0;}
+  .grupo h3{
+    font-size:1rem;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--terracota);font-weight:600;margin-bottom:1.1rem;
+    border-bottom:1px solid rgba(141,90,72,.25);padding-bottom:.5rem;
+  }
+  .item{
+    display:flex;align-items:baseline;gap:.6rem;
+    padding:.7rem 0;font-size:.98rem;
+  }
+  .item .nome{white-space:nowrap;font-weight:500;}
+  .item .nome .tag{
+    display:inline-block;margin-left:.5rem;font-size:.65rem;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--creme);
+    background:var(--terracota);padding:.15rem .5rem;border-radius:999px;
+    vertical-align:middle;
+  }
+  .item .pontilhado{
+    flex:1;border-bottom:1px dotted rgba(74,46,35,.35);
+    transform:translateY(-.35rem);min-width:1rem;
+  }
+  .item .preco{font-family:'Cinzel',serif;font-weight:600;color:var(--marrom);white-space:nowrap;}
+  .em-breve{
+    margin-top:1.6rem;font-size:.85rem;font-style:italic;color:var(--terracota);
+  }
+
+  /* como funciona - dark */
+  .funciona{background:var(--marrom);color:var(--creme);}
+  .funciona .eyebrow{color:var(--rose-suave);}
+  .funciona h2{color:var(--creme);}
+  .passos{display:grid;gap:2rem;margin-top:1rem;}
+  @media(min-width:720px){.passos{grid-template-columns:repeat(3,1fr);}}
+  .passo{display:flex;align-items:center;gap:1rem;}
+  .passo b{
+    font-family:'Cinzel',serif;font-size:2.2rem;
+    color:var(--dourado);flex-shrink:0;
+  }
+  .passo p{font-size:.95rem;opacity:.9;}
+
+  /* sobre */
+  .sobre .wrap{max-width:920px;display:grid;gap:2.4rem;}
+  .sobre-foto img{
+    width:100%;border-radius:18px;
+    box-shadow:0 18px 34px -20px rgba(74,46,35,.45);
+  }
+  .sobre-texto p{margin-bottom:1.1rem;font-size:1.02rem;}
+  .sobre .assinatura{
+    font-family:'Cinzel',serif;font-style:normal;color:var(--terracota);
+    margin-top:1.6rem;font-size:1.05rem;
+  }
+  @media(min-width:760px){
+    .sobre .wrap{grid-template-columns:280px 1fr;align-items:center;}
+  }
+
+  /* depoimentos */
+  .depoimentos{background:var(--bege);}
+  .grade-depo{display:grid;gap:1.4rem;margin-top:1rem;}
+  @media(min-width:640px){.grade-depo{grid-template-columns:1fr 1fr;}}
+  .depo{
+    background:var(--creme);border:1px solid rgba(141,90,72,.18);
+    border-radius:14px;padding:1.4rem 1.5rem;
+    box-shadow:0 10px 24px -18px rgba(74,46,35,.35);
+  }
+  .estrelas{color:var(--dourado);font-family:'Cinzel',serif;letter-spacing:.2em;font-size:.9rem;margin-bottom:.6rem;}
+  .depo p{font-size:.93rem;}
+
+  /* faq */
+  .faq details{
+    border-bottom:1px solid rgba(74,46,35,.15);
+    padding:1.1rem 0;
+  }
+  .faq summary{
+    font-family:'Cinzel',serif;font-size:1.02rem;cursor:pointer;
+    list-style:none;display:flex;justify-content:space-between;gap:1rem;
+  }
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:'+';font-family:'Montserrat',sans-serif;color:var(--terracota);font-size:1.3rem;font-weight:600;}
+  .faq details[open] summary::after{content:'–';}
+  .faq p{margin-top:.8rem;font-size:.94rem;max-width:60ch;}
+
+  /* contato */
+  .contato{background:var(--terracota);color:var(--creme);text-align:center;}
+  .contato .eyebrow{color:var(--rose-suave);}
+  .contato h2{color:var(--creme);}
+  .contato p.sub{max-width:44ch;margin:0 auto 2rem;opacity:.92;}
+  .contato .btn-primary{background:var(--creme);color:var(--terracota);}
+  .contato .btn-primary:hover{background:var(--marrom);color:var(--creme);}
+  .info-contato{
+    display:flex;flex-wrap:wrap;justify-content:center;gap:1.8rem;
+    margin-top:2.6rem;font-size:.9rem;
+  }
+  .info-contato a,.info-contato span{opacity:.95;}
+  .info-contato div b{display:block;font-family:'Cinzel',serif;font-weight:600;margin-bottom:.3rem;font-size:.95rem;}
+
+  footer{
+    background:var(--marrom);color:var(--rose-suave);
+    text-align:center;padding:2rem 1.5rem;font-size:.8rem;
+  }
+  footer a{color:var(--creme);}
+
+  /* whatsapp flutuante */
+  .wa-float{
+    position:fixed;right:1.1rem;bottom:1.1rem;z-index:60;
+    width:58px;height:58px;border-radius:50%;
+    background:var(--whatsapp);display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 20px -6px rgba(0,0,0,.4);
+  }
+  .wa-float svg{width:28px;height:28px;}
+
+  @media(max-width:480px){
+    section{padding:3.2rem 1.2rem;}
+    .sprig{width:220px;height:220px;top:-10px;right:-60px;opacity:.4;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#topo" class="brand"><img src="imagens/logo.jpeg" alt="Jully Ronqui Beauty &amp; Wellness logo">Jully Ronqui<small>Beauty &amp; Wellness</small></a>
+    <a class="btn btn-primary" href="https://wa.me/353852573125?text=Hello%21%20I%20saw%20your%20website%20and%20would%20like%20to%20book%20an%20appointment." rel="noopener">Message on WhatsApp</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="topo">
+  <svg class="sprig" viewBox="0 0 200 200" fill="none" stroke="#8D5A48" stroke-width="1.4" aria-hidden="true">
+    <path d="M100 190 C 96 140, 104 90, 100 20"/>
+    <path d="M100 150 C 120 140, 140 120, 150 100"/>
+    <path d="M100 120 C 80 112, 62 96, 55 78"/>
+    <path d="M100 90 C 122 82, 140 66, 148 48"/>
+    <path d="M100 60 C 82 54, 66 40, 60 24"/>
+    <circle cx="100" cy="18" r="4"/>
+  </svg>
+  <div class="wrap">
+    <span class="selo-confianca">Beauty &amp; wellness in Seven Mills, Dublin</span>
+    <h1>Sometimes all we need is a pause.</h1>
+    <p class="sub">Facial, body and brow treatments in a cosy home studio — or in the comfort of your own home. Personalised care, every time.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="https://wa.me/353852573125?text=Hello%21%20I%20saw%20your%20website%20and%20would%20like%20to%20book%20an%20appointment." rel="noopener">Message on WhatsApp now</a>
+      <a class="btn btn-ghost" href="#servicos">See treatments &amp; prices</a>
+    </div>
+    <div class="badges">
+      <div class="badge"><b>15 years</b>of experience</div>
+      <div class="badge"><b>100%</b>personalised care</div>
+      <div class="badge"><b>★★★★★</b>real client reviews</div>
+    </div>
+  </div>
+</section>
+
+<div class="faixa">
+  <div class="wrap">
+    <span>Seven Mills &amp; surrounding areas</span><span class="dot">·</span>
+    <span>Home studio + mobile appointments</span><span class="dot">·</span>
+    <span>Service in English &amp; Portuguese</span>
+  </div>
+</div>
+
+<section class="servicos" id="servicos">
+  <div class="wrap">
+    <span class="eyebrow">Treatments</span>
+    <h2>Services &amp; prices</h2>
+
+    <div class="grupo">
+      <h3>Facial treatments</h3>
+      <div class="item"><span class="nome">Glow Experience<span class="tag">signature</span></span><span class="pontilhado"></span><span class="preco">€75</span></div>
+      <div class="item"><span class="nome">Porcelain Skin (Dermaplaning)</span><span class="pontilhado"></span><span class="preco">€75</span></div>
+    </div>
+
+    <div class="grupo">
+      <h3>Brows &amp; lashes</h3>
+      <div class="item"><span class="nome">Eyebrow design</span><span class="pontilhado"></span><span class="preco">€20</span></div>
+      <div class="item"><span class="nome">Eyebrow design + tint</span><span class="pontilhado"></span><span class="preco">€28</span></div>
+      <div class="item"><span class="nome">Lash lift</span><span class="pontilhado"></span><span class="preco">€50</span></div>
+      <div class="item"><span class="nome">Brow lamination</span><span class="pontilhado"></span><span class="preco">€45</span></div>
+    </div>
+
+    <div class="grupo">
+      <h3>Massages &amp; body</h3>
+      <div class="item"><span class="nome">Relaxing massage (60 min)<span class="tag">most popular</span></span><span class="pontilhado"></span><span class="preco">€70</span></div>
+      <div class="item"><span class="nome">Lymphatic drainage (60 min)</span><span class="pontilhado"></span><span class="preco">€70</span></div>
+    </div>
+
+    <div class="grupo">
+      <h3>Hair removal</h3>
+      <div class="item"><span class="nome">Upper lip</span><span class="pontilhado"></span><span class="preco">€7</span></div>
+      <div class="item"><span class="nome">Underarms</span><span class="pontilhado"></span><span class="preco">€15</span></div>
+      <div class="item"><span class="nome">Brazilian</span><span class="pontilhado"></span><span class="preco">€30</span></div>
+      <div class="item"><span class="nome">Hollywood</span><span class="pontilhado"></span><span class="preco">€35</span></div>
+      <div class="item"><span class="nome">Half leg</span><span class="pontilhado"></span><span class="preco">€20</span></div>
+      <div class="item"><span class="nome">Full leg</span><span class="pontilhado"></span><span class="preco">€35</span></div>
+    </div>
+
+    <p class="em-breve">Coming soon: microblading (eyebrow pigmentation).</p>
+  </div>
+</section>
+
+<section class="funciona">
+  <div class="wrap">
+    <span class="eyebrow">How it works</span>
+    <h2>From WhatsApp to your moment of care</h2>
+    <div class="passos">
+      <div class="passo"><b>1</b><p>Message on WhatsApp and tell us what you need.</p></div>
+      <div class="passo"><b>2</b><p>Book the time that fits your routine.</p></div>
+      <div class="passo"><b>3</b><p>Your session at the Seven Mills home studio or at your own home.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre">
+  <div class="wrap">
+    <div class="sobre-foto">
+      <img src="imagens/sobre.jpg" alt="Jully Ronqui, beauty therapist at Jully Ronqui Beauty &amp; Wellness">
+    </div>
+    <div class="sobre-texto">
+      <span class="eyebrow">A little about me</span>
+      <h2>The hands that care for you</h2>
+      <p>With 15 years in beauty and wellness, I treat every client as unique — listening to what's really bothering you before recommending a treatment, and adapting every session to your needs.</p>
+      <p>After taking a step back to embrace motherhood, I'm back with even more energy and purpose: creating moments of self-care, confidence and well-being for women in Dublin.</p>
+      <p class="assinatura">Self-care isn't a luxury, it's necessary.</p>
+    </div>
+  </div>
+</section>
+
+<section class="depoimentos">
+  <div class="wrap">
+    <span class="eyebrow">Testimonials</span>
+    <h2>What clients say</h2>
+    <div class="grade-depo">
+      <div class="depo"><div class="estrelas">★★★★★</div><p>"Feel very relaxed and refreshed after a session. Amazing experience. Can for sure recommend her."</p></div>
+      <div class="depo"><div class="estrelas">★★★★★</div><p>"Very relaxing, professional service, and great attention to detail. Felt much better afterwards. Highly recommended."</p></div>
+      <div class="depo"><div class="estrelas">★★★★★</div><p>"Just had the best massage at home, thank you so much!"</p></div>
+      <div class="depo"><div class="estrelas">★★★★★</div><p>"She is just amazing. Clean, prepared and such an amazing experience."</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <span class="eyebrow">FAQs</span>
+    <h2>Frequently asked questions</h2>
+
+    <details>
+      <summary>Is the service available in Portuguese?</summary>
+      <p>Yes — every appointment can be conducted in Portuguese or English, from booking to the session itself.</p>
+    </details>
+    <details>
+      <summary>Do you only work from the home studio, or do you offer mobile appointments too?</summary>
+      <p>Both: you can come to the home studio in Seven Mills, Dublin 22, or book a mobile appointment at your own home nearby.</p>
+    </details>
+    <details>
+      <summary>How do I book an appointment?</summary>
+      <p>Just message on WhatsApp and let me know which treatment you're interested in; appointments are always booked in advance.</p>
+    </details>
+    <details>
+      <summary>Can I just walk in without booking?</summary>
+      <p>No — every appointment is booked in advance, to make sure each client gets full time and attention.</p>
+    </details>
+    <details>
+      <summary>Which treatments are most popular?</summary>
+      <p>The Relaxing Massage is the most requested by clients; the Glow Experience is the house's signature facial treatment.</p>
+    </details>
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2>Book your moment of care</h2>
+    <p class="sub">Message on WhatsApp and book the treatment that's right for you.</p>
+    <a class="btn btn-primary" href="https://wa.me/353852573125?text=Hello%21%20I%20saw%20your%20website%20and%20would%20like%20to%20book%20an%20appointment." rel="noopener">Message on WhatsApp now</a>
+
+    <div class="info-contato">
+      <div><b>WhatsApp / Phone</b><a href="tel:+353852573125">+353 85 257 3125</a></div>
+      <div><b>Address</b><a href="https://www.google.com/maps/search/?api=1&query=23+Parkleigh+Green%2C+Seven+Mills%2C+Dublin+22%2C+Ireland" rel="noopener" target="_blank">23 Parkleigh Green, Seven Mills, Dublin 22</a></div>
+      <div><b>Hours</b><span>Appointment only</span></div>
+      <div><b>Instagram</b><a href="https://instagram.com/jullyronqui" rel="noopener" target="_blank">@jullyronqui</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>Jully Ronqui Beauty &amp; Wellness — Seven Mills, Dublin 22, Ireland</p>
+  <p><a href="https://instagram.com/jullyronqui" rel="noopener" target="_blank">@jullyronqui</a> · 2026</p>
+</footer>
+
+<a class="wa-float" href="https://wa.me/353852573125?text=Hello%21%20I%20saw%20your%20website%20and%20would%20like%20to%20book%20an%20appointment." rel="noopener" aria-label="Message on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#FFFFFF" aria-hidden="true"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.4.7 4.63 1.9 6.51L4 29l7.66-1.85a11.9 11.9 0 0 0 4.36.82h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 21.9c-1.5 0-2.96-.4-4.24-1.15l-.3-.18-4.55 1.1 1.12-4.44-.2-.32a9.87 9.87 0 0 1-1.5-5.29c0-5.46 4.45-9.9 9.9-9.9 5.46 0 9.9 4.44 9.9 9.9-.01 5.45-4.46 9.9-9.9 9.9zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.2 2.09 3.2 5.07 4.48.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.08 1.76-.72 2-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Jully Ronqui Beauty & Wellness",
+  "description": "Beauty and wellness treatments with a personalised touch, in a home studio or on mobile appointments.",
+  "telephone": "+353852573125",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "23 Parkleigh Green, Seven Mills",
+    "addressLocality": "Dublin",
+    "postalCode": "D22",
+    "addressCountry": "IE"
+  },
+  "areaServed": "Seven Mills and surrounding areas, Dublin 22",
+  "sameAs": ["https://instagram.com/jullyronqui"]
+}
+</script>
+
+</body>
+</html>
